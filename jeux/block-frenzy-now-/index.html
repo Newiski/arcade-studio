@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Block Frenzy Now! - Arcade Studio</title>
+    <meta name="description" content="Merge tiles to create the ultimate 2048 puzzle!">
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
+        .header { background: #1a1a24; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #ff0055; }
+        .header a { color: white; text-decoration: none; font-family: sans-serif; font-weight: bold; background: #ff0055; padding: 8px 20px; border-radius: 20px; transition: background 0.2s; }
+        .header a:hover { background: #ff3377; }
+        .header span { color: white; font-family: sans-serif; font-weight: bold; font-size: 1.2rem; }
+        iframe { width: 100%; height: calc(100% - 55px); border: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="/">⬅ Retour aux jeux</a>
+        <span>💥 Block Frenzy Now!</span>
+    </div>
+    <!-- C'est ici que la magie opère : on charge le vrai jeu depuis son serveur d'origine -->
+    <iframe src="https://gabrielecirulli.github.io/2048/"></iframe>
+</body>
+</html>
